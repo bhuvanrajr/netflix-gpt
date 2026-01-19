@@ -1,13 +1,13 @@
 import Header from './Header'
-import Background from './Background'
 import useNowPlayingMovies from '../hooks/useNowPlayingMovies';
+import MainContainer from './MainContainer';
 
 const Browse = () => {
 useNowPlayingMovies(); 
   return (
     <div>
       <Header />
-      <Background />
+      <MainContainer />
     </div>
   )
 }

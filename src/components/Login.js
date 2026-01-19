@@ -29,13 +29,6 @@ const Login = () => {
         //console.log("Iam in!")
         createUserWithEmailAndPassword(auth, eml.current.value, pwd.current.value)
         .then((userCredential) => {
-            // Signed up 
-            // const {uid, email, displayName, } = userCredential.user;
-
-            // //console.log(user);
-            // dispatch(addUser({uid: uid, email : email, displayName: displayName}));
-            //navigate("/browse")
-            // ...
         })
         .catch((error) => {
             const errorCode = error.code;
@@ -48,13 +41,6 @@ const Login = () => {
     {
         signInWithEmailAndPassword(auth, eml.current.value, pwd.current.value)
         .then((userCredential) => {
-            // Signed in 
-        //    const {uid, email, displayName, } = userCredential.user;
-
-        //     //console.log(user);
-        //     dispatch(addUser({uid: uid, email : email, displayName: displayName}));
-            // ...
-            //navigate("/browse");
         })
         .catch((error) => {
             const errorCode = error.code;

@@ -16,7 +16,6 @@ const Header = () => {
             
             const {uid, email, displayName, } = user;
             dispatch(addUser({uid: uid, email : email, displayName: displayName}));
-            console.log(user);
             setUserLoggedIn(true);
             navigate("/browse");
         }
